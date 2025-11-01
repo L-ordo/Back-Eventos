@@ -27,3 +27,21 @@ cd Back-Eventos
 npm install
 
 ```
+```
+back-eventos/
+│
+├── src/
+│   ├── controllers/
+│   │   └── eventosController.ts   # Lógica de controladores
+│   ├── models/
+│   │   └── Evento.ts              # Modelo de Mongoose
+│   ├── routes/
+│   │   └── eventos.ts             # Definición de rutas
+│   └── server.ts                  # Configuración principal del servidor
+│
+├── .env                           # Variables de entorno (ignorado por git)
+├── .gitignore                     # Archivos ignorados en el repo
+├── package.json                   # Dependencias y scripts
+├── tsconfig.json                  # Configuración de TypeScript
+└── README.md                      # Documentación del proyecto
+```
