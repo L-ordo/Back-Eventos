@@ -3,11 +3,17 @@ import mongoose from "mongoose"
 import cors from "cors"
 import dotenv from "dotenv"
 import eventosRoutes from "./routes/eventos"
+import { errorHandler } from "./middlewares/errorHandler"
 
 
 dotenv.config()
 
 const app = express()
+app.get("/", (_req, res) => {
+  res.send("🚀 API de Eventos funcionando correctamente")
+})
+
+app.use(errorHandler)
 app.use(cors())
 app.use(express.json())
 
